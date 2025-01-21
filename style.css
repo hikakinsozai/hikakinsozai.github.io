@@ -34,16 +34,18 @@ header{
     line-height: 1.5;
     margin-left: 10px;
 }
-/* ナビゲーション */
 .gnav{
     width: 100%;
     background-color: #333;
 }
+
 .gnav_wrapper{
     max-width: 980px;
     margin: auto;
     display: flex;
+    align-items: center; /* アイテムを縦中央揃え */
 }
+
 .gnav_wrapper li{
     border-left: #888 1px solid;
     text-align: center;
@@ -51,17 +53,36 @@ header{
     transition: all  0.3s ease;
     list-style:none;
 }
+
 .gnav_wrapper li:last-child{
     border-right: #888 1px solid;
 }
+
 .gnav_wrapper li:hover{
     background-color: #888;
 }
+
 .gnav_wrapper li a{
     display: block;
     padding: 1.3em 0;
     color: #fff;
     text-decoration: none;
+}
+
+/* 検索バーの追加 */
+.search-wrapper {
+    margin-left: 20px;  /* 左側に少しスペース */
+    display: flex;
+    align-items: center;
+}
+
+#search-input {
+    padding: 8px 15px;
+    margin-left: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    width: 200px;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
