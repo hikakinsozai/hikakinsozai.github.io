@@ -33,3 +33,23 @@ document.addEventListener("DOMContentLoaded", () => {
     modal.classList.add("hidden"); // モーダルを非表示にする
   });
 });
+document.addEventListener('DOMContentLoaded', function() {
+    // 検索バーの入力イベント
+    const searchInput = document.getElementById('search-input');
+    
+    if (searchInput) {
+        searchInput.addEventListener('input', function() {
+            const searchQuery = this.value.toLowerCase();
+            const videoItems = document.querySelectorAll('.video-item');
+            
+            videoItems.forEach(function(item) {
+                const title = item.querySelector('.video-title').textContent.toLowerCase();
+                if (title.includes(searchQuery)) {
+                    item.style.display = '';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+    }
+});
