@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>hikakin_mania素材場</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+<head>
+
+<body>
+
+<header>
+    <div class="header_wrapper">
+        <h1>
+            <a href="#">hikakin_mania素材場</a>
+            <span>ヒカマニのGB素材がダウンロードできるサイトです</span>
+        </h1>
+    </div>
+</header>
+
+<nav class="gnav">
+    <ul class="gnav_wrapper">
+        <li><a href="#">ヒカキン</a></li>
+        <li><a href="#">セイキン</a></li>
+        <li><a href="#">マスオ</a></li>
+        <li><a href="#">その他</a></li>
+        <li><a href="#">お問い合わせ</a></li>
+    </ul>
+</nav>
+<div class="video-gallery">
+  <div class="video-item">
+    <video src=".mp4" controls></video>
+    <p class="video-title">(驚く)</p>
+    <button class="download-btn" data-file=".mp4">ダウンロード</button>
+  </div>
+  <div class="video-item">
+    <video src="video2.mp4" controls></video>
+        <p class="video-title">何を四天王！？</p>
+    <button class="download-btn" data-file="video2.mp4">ダウンロード</button>
+  </div>
+  <div class="video-item">
+    <video src="video3.mp4" controls></video>
+        <p class="video-title">カニキン</p>
+    <button class="download-btn" data-file="video2.mp4">ダウンロード</button>
+  </div>
+</div>
+
+<div id="confirmation-modal" class="modal hidden">
+  <div class="modal-content">
+    <p>この動画をダウンロードしますか？</p>
+    <button id="confirm-yes">はい</button>
+    <button id="confirm-no">いいえ</button>
+    </label>
+  </div>
+</div>
